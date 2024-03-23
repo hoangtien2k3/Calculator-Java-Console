@@ -49,7 +49,6 @@ public class Calculator implements ICalculator {
             }
         }
 
-        // Perform multiplication and division
         int mulIndex = expression.lastIndexOf("*");
         int divIndex = expression.lastIndexOf("/");
         if (mulIndex != -1 || divIndex != -1) {
@@ -69,7 +68,6 @@ public class Calculator implements ICalculator {
             }
         }
 
-        // If no operators found, parse and return the value
         return new BigDecimal(expression);
     }
 }
